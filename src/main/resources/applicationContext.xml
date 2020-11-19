@@ -10,7 +10,7 @@
                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <context:property-placeholder location="classpath:c3p0config.properties"/>
 
-
+    <!--创建对象-->
     <bean id="userDao" class="gdut.wlz.dao.impl.UserDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
